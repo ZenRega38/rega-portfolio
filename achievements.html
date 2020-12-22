@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Achievements Landing Page</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="achievements.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+		$(window).on('scroll', function(){
+			if ($(window).scrollTop()) {
+				$('header').addClass('black');
+			} else {
+				$('header').removeClass('black');
+			}
+		})
+	</script>
+</head>
+<body>
+	<section>
+		<header class="header">
+			<a href="#" class="logo"><h2>Achievements</h2></a>
+			<nav>
+				<ul class="nav_links">
+					<li><a href="web_portofolio.html">Home</a></li>
+					<li><a href="profile.html">Profile</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contacts</a></li>
+				</ul>
+			</nav>
+			<div class="menu-toggle"></div>
+			<script src="https://code.jquery.com/jquery-3.5.1.js"
+			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			  crossorigin="anonymous"></script>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('.menu-toggle').click(function(){
+						$('.menu-toggle').toggleClass('active')
+						$('nav').toggleClass('active')
+					})
+				})
+			</script>
+		</header>
+
+	
+		<div class="circle"></div>
+		<div class="content">
+			<div class="textBox">
+				<h2>My Sertificates</h2>
+				<p>I have 11 certificates, 4 of them are from online course, 3 of them are from competition, 3 others are from webinar, and 1 of them is from seminar.
+				Let’s take a look! And you can also see the pdf version by clicking this button bellow.</p>
+				<a href="https://drive.google.com/drive/folders/19aCnxYu_d2NI-9vwRG8GQwzrwq0xG9ss?usp=sharing">Learn More</a>
+			</div>
+
+			<div class="imgBox">
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				    	<div class="swiper-slide">
+				    		<img src="img/dicoding_web.jpg">
+				    		<h2>Basic Web Programming</h2>
+				    		<p>Dicoding - Valid till 21 March 2023</p>
+				    	</div>
+				    	<div class="swiper-slide">
+				    		<img src="img/dicoding_andro.jpg">
+				    		<h2>Basic Android App Development</h2>
+				    		<p>Dicoding - Valid till 18 Sept 2022</p>
+				    	</div>
+				    	<div class="swiper-slide">
+				    		<img src="img/dicoding_ios.jpg">
+				    		<h2>Basic iOS App Development</h2>
+				    		<p>Dicoding - Valid till 12 Nov 2023</p>
+				    	</div>
+				    	<div class="swiper-slide">
+				    		<img src="img/dicoweb_ade.jpg">
+				    		<h2>How To Become an Android Developer Expert</h2>
+				    		<p>Dicoding - Webinar Attendance ( 03 Sept 2020 )</p>
+				    	</div>
+				    	<div class="swiper-slide">
+				    		<img src="img/dicoweb_lean_agile.jpg">
+				    		<h2>Lean-Agile Mindset</h2>
+				    		<p>Dicoding - Webinar Attendance ( 10 Sept 2020 )</p>
+				    	</div>
+				    	<div class="swiper-slide">
+				    		<img src="img/dicoweb_swiftui.jpg">
+				    		<h2>Build Your Beautiful Apps Using  SwiftUI</h2>
+				    		<p>Dicoding - Webinar Attendance ( 27 Aug 2020 )</p>
+				    	</div>
+				    	<div class="swiper-slide">
+				    		<img src="img/sql_fundamental.jpg">
+				    		<h2>SQL Fundamental Course</h2>
+				    		<p>SoloLearn - 14 Oct 2019</p>
+				    	</div>
+				    	<div class="swiper-slide">
+				    		<img src="img/tech_nowadays.jpg">
+				    		<h2>Technowadays</h2>
+				    		<p>HIMATIKA PERBANAS - Seminar Attendance ( 5 March 2020 )</p>
+				    	</div>
+				    	<div class="swiper-slide">
+				    		<img src="img/it_venture.jpg">
+				    		<h2>IT Venture - PING</h2>
+				    		<p>HIMASTER - Poster Design Competition ( 27 Aug 2020 )</p>
+				    	</div>
+				    	<div class="swiper-slide">
+				    		<img src="img/technocorner_sers.jpg">
+				    		<h2>Technocorner 2020</h2>
+				    		<p>UGM - SumoBot Competition ( 5 March 2020 )</p>
+				    	</div>
+				    	<div class="swiper-slide">
+				    		<img src="img/himfest.jpg">
+				    		<h2>HIMFEST UI/UX Competition 2020</h2>
+				    		<p>Binus University - Web Design Competition ( 13 Aug 2020 )</p>
+				    	</div>
+				    </div>
+				</div>
+			</div>
+
+		</div>
+		<ul class="sci">
+			<li><a href="https://www.linkedin.com/in/rega-rizkan-a-49bb69192/"><img style="height: 50px; width: 50px" src="img/linkedin.png"></a></li>
+			<li><a href="https://github.com/ZenRega38"><img style="height: 50px; width: 50px" src="img/github.png"></a></li>
+			<li><a href="https://www.instagram.com/zen.rega/"><img src="img/instagram.png"></a></li>
+		</ul>
+	</section>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 10,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      loop: true,
+    });
+  </script>
+
+</body>
+</html>
