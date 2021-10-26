@@ -120,12 +120,14 @@ section .circle
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	clear: both;
+	display: inline-block;
 }
 
 .content .textBox
 {
 	position: relative;
-	width: 30%;
+	width: 40%;
 	margin-right: 20px;
 }
 
@@ -139,7 +141,7 @@ section .circle
 }
 
 .content .imgBox .swiper-wrapper{
-	
+
 }
 
 .content .textBox h2
