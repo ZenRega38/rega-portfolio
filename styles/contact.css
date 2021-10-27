@@ -8,6 +8,10 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+body {
+  overflow: hidden;
+
+}
 
 .header nav
 {
@@ -35,7 +39,7 @@
 
 .header nav ul li a:hover
 {
-	color: #333;
+	color: #000;
 }
 
 .nav_links li, 
@@ -114,7 +118,7 @@ section
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background-color: #4ac7ff;
+	background-color: #393e46;
 }
 
 section:before
@@ -125,7 +129,7 @@ section:before
 	left: 0;
 	width: 50%;
 	height: 100%;
-	background-color: #333;
+	background-color: #000;
 }
 
 section .container
@@ -143,7 +147,7 @@ section .container .contactinfo
 	top: 40px;
 	width: 350px;
 	height: calc(100% - 80);
-	background: #4ac7ff;
+	background: #393e46;
 	z-index: 1;
 	padding: 40px;
 	display: flex;
@@ -325,7 +329,7 @@ section .container .contactForm .formBox .inputBox input[type="submit"]
 {
 	position: relative;
 	cursor: pointer;
-	background: #4ac7ff;
+	background: #393e46;
 	color: #fff;
 	border: none;
 	max-width: 150px;
@@ -334,7 +338,7 @@ section .container .contactForm .formBox .inputBox input[type="submit"]
 
 section .container .contactForm .formBox .inputBox input[type="submit"]:hover
 {
-	background: #0f3959;
+	background: #333;
 }
 
 @media (max-width: 669px)

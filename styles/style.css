@@ -9,6 +9,11 @@
 	scroll-behavior: smooth;
 }
 
+body {
+  overflow: hidden;
+
+}
+
 .header nav
 {
 	float: right;
