@@ -9,6 +9,14 @@
 	scroll-behavior: smooth;
 }
 
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+
+}
+
 .header nav
 {
 	float: right;
@@ -140,7 +148,8 @@ section .circle
 
 }
 
-.content .imgBox .swiper-wrapper{
+.swiper-wrapper{
+	width:;
 
 }
 
@@ -233,7 +242,7 @@ section .circle
 
 .swiper-container 
 {
-    width: 100%;
+    width: 1000px;
     padding-top: 50px;
     padding-bottom: 100px;
     display: inline-block;
@@ -245,7 +254,6 @@ section .circle
 	margin-right: 20px;
 	margin-left: 20px;
     background-position: center;
-    background-size: cover;
     width: 550px;
     height: 400px;
 
