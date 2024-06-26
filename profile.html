@@ -229,25 +229,23 @@
 	
 	<script>
 			document.addEventListener('DOMContentLoaded', function() {
-				const jarallaxImg = document.querySelector('.jarallax-img');
+				const imageContainer = document.getElementById('image-container');
 				const hoverImages = ["img/mewwf.jpg", "img/TNIMangrove.jpg", "img/Techfest2024.jpg"];
 				let currentImageIndex = 0;
 				let intervalId;
 
-				jarallaxImg.addEventListener('mouseenter', () => {
+				imageContainer.addEventListener('mouseover', () => {
 					intervalId = setInterval(() => {
-						currentImageIndex = (currentImageIndex + 1) % hoverImages.length;
-						jarallaxImg.style.backgroundImage = `url(${hoverImages[currentImageIndex]})`;
+					currentImageIndex = (currentImageIndex + 1) % hoverImages.length;
+					imageContainer.style.backgroundImage = `url(${hoverImages[currentImageIndex]})`;
 					}, 700);
 				});
 
-				jarallaxImg.addEventListener('mouseleave', () => {
+				imageContainer.addEventListener('mouseout', () => {
 					clearInterval(intervalId);
-					jarallaxImg.style.backgroundImage = `url(img/pare.jpg)`; // Reset using the original image path
+					imageContainer.style.backgroundImage = 'none'; // Remove the background image on mouseout
 				});
 			});
-
-
 	</script>
 </body>
 </html>
