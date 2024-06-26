@@ -191,8 +191,7 @@
 			<h2 data-jarallax-element="0 -200">Pare Homies</h2> 
 			<div class="container">
 				<div class="imgBx jarallax" style="margin-right: -50px;">
-					<img src="img/pare.jpg" alt="Base Image" id="myImage" class="jarallax-img">
-					<!-- <img src="img/pare.jpg" class="jarallax-img"> -->
+					<img src="img/pare.jpg" class="jarallax-img">
 				</div>
 				<div class="content" data-jarallax-element="-200 0" style="margin-left: -50px;">
 					<p>I miss those guys, we have no hurt feelings, feels like we having the same frequency, we can even understand what others said without a word. They’ve turned our time when we having course at Pare becomes moments. I hope I can meet those guys again, soon.</p>
@@ -225,27 +224,6 @@
 		jarallax(document.querySelectorAll('.jarallax'), {
     		speed: 0.5
 		});
-	</script>
-	
-	<script>
-			document.addEventListener('DOMContentLoaded', function() {
-				const imageContainer = document.getElementById('image-container');
-				const hoverImages = ["img/mewwf.jpg", "img/TNIMangrove.jpg", "img/Techfest2024.jpg"];
-				let currentImageIndex = 0;
-				let intervalId;
-
-				imageContainer.addEventListener('mouseover', () => {
-					intervalId = setInterval(() => {
-					currentImageIndex = (currentImageIndex + 1) % hoverImages.length;
-					imageContainer.style.backgroundImage = `url(${hoverImages[currentImageIndex]})`;
-					}, 700);
-				});
-
-				imageContainer.addEventListener('mouseout', () => {
-					clearInterval(intervalId);
-					imageContainer.style.backgroundImage = 'none'; // Remove the background image on mouseout
-				});
-			});
 	</script>
 </body>
 </html>
