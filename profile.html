@@ -228,25 +228,28 @@
 	</script>
 	
 	<script>
-		document.addEventListener('DOMContentLoaded', function() { // Wait for Jarallax to initialize
-			const jarallaxImg = document.querySelector('.jarallax-img');
+		document.addEventListener('DOMContentLoaded', function() {
+			const jarallaxContainer = document.querySelector('.jarallax'); // Get the Jarallax container
 			const hoverImages = ["img/mewwf.jpg", "img/TNIMangrove.jpg", "img/Techfest2024.jpg"];
 			let currentImageIndex = 0;
 			let intervalId;
-		
-			jarallaxImg.addEventListener('mouseover', () => {
-			intervalId = setInterval(() => {
-				currentImageIndex = (currentImageIndex + 1) % hoverImages.length;
-				jarallaxImg.style.backgroundImage = `url(${hoverImages[currentImageIndex]})`; 
-			}, 700);
-			});
-		
-			jarallaxImg.addEventListener('mouseout', () => {
-			clearInterval(intervalId);
-			jarallaxImg.style.backgroundImage = `url(img/pare.jpg)`; // Reset using the original image path
-			});
-		});
 
+			jarallaxContainer.addEventListener('mouseover', (event) => {
+				if (event.target.classList.contains('jarallax-img')) { // Check if the hovered element is the Jarallax image
+				intervalId = setInterval(() => {
+					currentImageIndex = (currentImageIndex + 1) % hoverImages.length;
+					event.target.style.backgroundImage = `url(${hoverImages[currentImageIndex]})`;
+				}, 700);
+				}
+			});
+
+			jarallaxContainer.addEventListener('mouseout', (event) => {
+				if (event.target.classList.contains('jarallax-img')) { // Check if the mouse left the Jarallax image
+				clearInterval(intervalId);
+				event.target.style.backgroundImage = `url(img/pare.jpg)`;
+				}
+			});
+			});
 	</script>
 </body>
 </html>
