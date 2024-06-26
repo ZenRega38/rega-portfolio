@@ -211,6 +211,19 @@ header.black .nav_links
 	cursor: pointer;
 }
 
+.image-container 
+{
+	position: relative;
+}
+  
+#myImage 
+{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+  
+
 @media (max-width: 669px)
 {
 	.header
