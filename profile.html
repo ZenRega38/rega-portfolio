@@ -191,7 +191,7 @@
 			<h2 data-jarallax-element="0 -200">Pare Homies</h2> 
 			<div class="container">
 				<div class="imgBx jarallax" style="margin-right: -50px;">
-					<img src="img/pare.jpg" alt="Base Image" id="myImage">
+					<img src="img/pare.jpg" alt="Base Image" id="myImage" class="jarallax-img">
 					<!-- <img src="img/pare.jpg" class="jarallax-img"> -->
 				</div>
 				<div class="content" data-jarallax-element="-200 0" style="margin-left: -50px;">
@@ -226,14 +226,15 @@
     		speed: 0.5
 		});
 	</script>
+	
 	<script>
-		const imageContainer = document.querySelector('.container');
 		const myImage = document.getElementById('myImage');
 		const hoverImages = ["img/mewwf.jpg", "img/TNIMangrove.jpg", "img/Techfest2024.jpg"]; // Add more image paths
 		let currentImageIndex = 0;
 		let intervalId;
+		const jarallaxImg = document.querySelector('.jarallax-img');
 
-		imageContainer.addEventListener('mouseover', () => {
+		jarallaxImg.addEventListener('mouseover', () => {
 		intervalId = setInterval(() => {
 			currentImageIndex = (currentImageIndex + 1) % hoverImages.length;
 			myImage.src = hoverImages[currentImageIndex];
