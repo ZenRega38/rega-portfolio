@@ -223,6 +223,9 @@ header.black .nav_links
 	height: auto;
 }
   
+.jarallax-img {
+	transition: background-image 0.3s ease; /* Add smooth transition for background image change */
+}
 
 @media (max-width: 669px)
 {
