@@ -63,10 +63,10 @@
 			<h2 data-jarallax-element="0 200">This is Me</h2> 
 			<div class="container">
 				<div class="imgBx jarallax">
-					<img src="img/myself.jpg" class="jarallax-img">
+					<img src="img/mewwf.jpg" class="jarallax-img">
 				</div>
 				<div class="content" data-jarallax-element="-200 0">
-					<p>Hi, my name is Rega. This picture was taken when I’m graduated from Junior High School. And Now I’m 16, I was born on 15 August 2004. I love my parents. I became interested in programming since the end of Junior High School. That’s why I choose Software Engineering Mayor in my High School to learn more about it. And I’m currently searching for an internship, so I can know how far are my skills and develop it. </p>
+					<p>Hi, my name is Rega. This picture was taken when I’m at the 10th World Water Forum. I’ll be 20 soon, I was born on 15 August 2004. I love my parents. I became interested in programming since the end of Junior High School. That’s why I choose Software Engineering Major in my High School and Computer Engineering Major for my undergraduate at Universitas Borneo Tarakan to learn more about technology development. And I’m currently searching for an internship, so I can know how far are my skills and deepen it. </p>
 				</div>
 			</div>
 		</div>
@@ -108,7 +108,7 @@
 					<img src="img/first_sers.jpeg" class="jarallax-img">
 				</div>
 				<div class="content">
-					<p>This is the first time me and some of my friends got a certificate for our programming skills, which is <a>Basic Android Development</a> from <a class="highlight" href="https://www.dicoding.com/">Dicoding</a>. My really first step to start my programming career. Thanks to our great mentor <a>Mr. Senno</a> (the middle one), check him out on <a class="highlight" href=“https://github.com/sennohananto”>GitHub</a> or <a class="highlight" href=“https://www.linkedin.com/in/sennohananto/”>LinkedIn</a>.</p>
+					<p>This is the first time me and my high school friends got a certificate for our programming skills, which is <a>Basic Android Development</a> from <a class="highlight" href="https://www.dicoding.com/">Dicoding</a>. My really first step to start my programming career. Thanks to our great mentor <a>Mr. Senno</a> (the middle one), check him out on <a class="highlight" href=“https://github.com/sennohananto”>GitHub</a> or <a class="highlight" href=“https://www.linkedin.com/in/sennohananto/”>LinkedIn</a>.</p>
 				</div>
 			</div>
 		</div>
@@ -191,7 +191,8 @@
 			<h2 data-jarallax-element="0 -200">Pare Homies</h2> 
 			<div class="container">
 				<div class="imgBx jarallax" style="margin-right: -50px;">
-					<img src="img/pare.jpg" class="jarallax-img">
+					<img src="img/pare.jpg" alt="Base Image" id="myImage">
+					<!-- <img src="img/pare.jpg" class="jarallax-img"> -->
 				</div>
 				<div class="content" data-jarallax-element="-200 0" style="margin-left: -50px;">
 					<p>I miss those guys, we have no hurt feelings, feels like we having the same frequency, we can even understand what others said without a word. They’ve turned our time when we having course at Pare becomes moments. I hope I can meet those guys again, soon.</p>
@@ -224,6 +225,26 @@
 		jarallax(document.querySelectorAll('.jarallax'), {
     		speed: 0.5
 		});
+	</script>
+	<script>
+		const imageContainer = document.querySelector('.image-container');
+		const myImage = document.getElementById('myImage');
+		const hoverImages = ["img/mewwf.jpg", "img/TNIMangrove.jpg", "img/Techfest2024.jpg"]; // Add more image paths
+		let currentImageIndex = 0;
+		let intervalId;
+
+		imageContainer.addEventListener('mouseover', () => {
+		intervalId = setInterval(() => {
+			currentImageIndex = (currentImageIndex + 1) % hoverImages.length;
+			myImage.src = hoverImages[currentImageIndex];
+		}, 700); // 700 milliseconds = 0.7 seconds
+		});
+
+		imageContainer.addEventListener('mouseout', () => {
+		clearInterval(intervalId);
+		myImage.src = "img/pare.jpg"; // Reset to the base image
+		});
+
 	</script>
 </body>
 </html>
