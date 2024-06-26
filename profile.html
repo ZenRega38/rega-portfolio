@@ -228,22 +228,23 @@
 	</script>
 	
 	<script>
-		const myImage = document.getElementById('myImage');
-		const hoverImages = ["img/mewwf.jpg", "img/TNIMangrove.jpg", "img/Techfest2024.jpg"]; // Add more image paths
-		let currentImageIndex = 0;
-		let intervalId;
-		const jarallaxImg = document.querySelector('.jarallax-img');
-
-		jarallaxImg.addEventListener('mouseover', () => {
-		intervalId = setInterval(() => {
-			currentImageIndex = (currentImageIndex + 1) % hoverImages.length;
-			myImage.src = hoverImages[currentImageIndex];
-		}, 700); // 700 milliseconds = 0.7 seconds
-		});
-
-		imageContainer.addEventListener('mouseout', () => {
-		clearInterval(intervalId);
-		myImage.src = "img/pare.jpg"; // Reset to the base image
+		document.addEventListener('DOMContentLoaded', function() { // Wait for Jarallax to initialize
+			const jarallaxImg = document.querySelector('.jarallax-img');
+			const hoverImages = ["img/mewwf.jpg", "img/TNIMangrove.jpg", "img/Techfest2024.jpg"];
+			let currentImageIndex = 0;
+			let intervalId;
+		
+			jarallaxImg.addEventListener('mouseover', () => {
+			intervalId = setInterval(() => {
+				currentImageIndex = (currentImageIndex + 1) % hoverImages.length;
+				jarallaxImg.style.backgroundImage = `url(${hoverImages[currentImageIndex]})`; 
+			}, 700);
+			});
+		
+			jarallaxImg.addEventListener('mouseout', () => {
+			clearInterval(intervalId);
+			jarallaxImg.style.backgroundImage = `url(img/pare.jpg)`; // Reset using the original image path
+			});
 		});
 
 	</script>
