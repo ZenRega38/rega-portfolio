@@ -46,6 +46,15 @@ section h2
 	margin-bottom: 20px;
 }
 
+section h3
+{
+	margin-left: 200px;
+	font-size: 3em;
+	color: #fff;
+	margin-top: -20px;
+	margin-bottom: 20px;
+}
+
 section .container
 {
 	position: relative;
