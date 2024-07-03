@@ -199,13 +199,13 @@ section .circle {
 .swiper-slide h2,
 .swiper-slide p {
   opacity: 0;
+  color: #fff;
   transition: opacity 0.3s ease-in-out;
 }
 
 .swiper-slide-active h2,
 .swiper-slide-active p {
   opacity: 1;
-  color: aliceblue;
 }
 
 .swiper-container {
