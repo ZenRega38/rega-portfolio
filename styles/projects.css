@@ -190,7 +190,7 @@ section .circle
 	margin-left: 20px;
     background-position: center;
     background-size: cover;
-    width: 970px;
+    width: auto;
     height: 550px;
 }
 
