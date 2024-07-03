@@ -191,7 +191,7 @@ section .circle
     background-position: center;
     background-size: cover;
 	background: transparent;
-    width: 120%;
+    width: auto;
     height: 400px;
 }
 
