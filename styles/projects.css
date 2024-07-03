@@ -170,8 +170,8 @@ section .circle
 
 .swiper-slide img
 {
-	height: 550px;
-	width: 970px;
+	height: 400px;
+	width: auto;
 }
 
 .swiper-container 
@@ -190,8 +190,8 @@ section .circle
 	margin-left: 20px;
     background-position: center;
     background-size: cover;
-    width: 970px;
-    height: 550px;
+    width: auto;
+    height: 400px;
 }
 
 .content .imgBox 
