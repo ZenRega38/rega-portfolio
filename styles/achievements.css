@@ -198,13 +198,14 @@ section .circle {
 
 .swiper-slide h2,
 .swiper-slide p {
-  opacity: 0;
   color: #fff;
+  opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
 
 .swiper-slide-active h2,
 .swiper-slide-active p {
+  color: #fff;
   opacity: 1;
 }
 
